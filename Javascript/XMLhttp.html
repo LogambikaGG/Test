@@ -1,0 +1,21 @@
+<html>
+<head> 
+    <title>XMLhttpRequest</title>
+</head>
+<body>
+    <p id="p-tag">Hey!!!</p>
+    <script>
+
+        function loading(){
+            const request = new XMLHttpRequest();
+            request.onload = function(){
+                document.getElementById("p-tag").innerHTML = this.responseText;
+            }
+            request.open("GET","sample.txt");
+            request.send();
+        }
+        loading();
+        
+    </script>
+</body>
+</html>

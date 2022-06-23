@@ -1,0 +1,36 @@
+/* .toggle-button {
+    width: 3rem;
+    background: grey;
+    border: none;
+    cursor: pointer;
+    padding-top: 0;
+    padding-bottom: 0;
+    vertical-align: middle;
+  }
+  
+.toggle-button-bar {
+    width: 100%;
+    height: 0.2rem;
+    background: black;
+    display: block;
+    margin: 0.6rem 0;
+  } */
+body {
+    height: 100vh;
+    width: 100vw;
+}
+
+a {
+    display: block;
+    padding: 1rem;
+    margin: auto;
+}
+
+.fa-solid ,
+  .fa-house-user {
+      color: darkcyan;
+      font-size: 2rem;
+     
+  }
+
+
