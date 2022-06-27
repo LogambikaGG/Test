@@ -1,0 +1,47 @@
+body{  
+    font-family: 'Times New Roman', Times, serif;  
+} 
+
+.main-section{
+    background-color: lightpink;
+    width: 605px;
+    margin: 20px auto; 
+}
+
+#heading{
+    text-align: center;
+}
+
+input[type="text"] {  
+    width: 250px;  
+} 
+
+input[type="submit"], input[type="reset"] {  
+    width: 77px;  
+    height: 27px;  
+    position: relative;
+    left: 180px;  
+}  
+
+form{  
+    text-align: center;  
+    font-family: 'Times New Roman', Times, serif;  
+    font-size: 20px;  
+    border: 3px solid black;  
+    width: 600px;  
+    height: 500px;
+    margin: 20px auto;  
+}  
+
+td {  
+    padding: 10px;  
+}  
+
+td:first-child {  
+    text-align: right;  
+    font-weight: bold;  
+} 
+
+td:last-child {  
+    text-align: left;  
+}

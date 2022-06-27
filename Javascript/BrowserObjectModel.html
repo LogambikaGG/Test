@@ -8,6 +8,9 @@
 </head>
 <body>
     <p id="para"></p>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
     <!-- <button onclick="clearInterval(timerVariable)">STOP</button> -->
     <script>
         createNewUser("https://jsonplaceholder.typicode.com/posts");
@@ -26,6 +29,12 @@
             .then((response) => response.text())
             .then((users) => document.getElementById("para").innerHTML = users);
         }
+        // JS Location ---- Window location href
+        document.getElementById("demo").innerHTML = "The full URL of this page is:<br>" + window.location.href;
+        // JS Location ---- Window location Hostname
+        document.getElementById("demo1").innerHTML = "Page hostname is: " + window.location.hostname;
+        // JS Location ---- Window location protocol
+        document.getElementById("demo2").innerHTML ="The page protocol is: " + window.location.protocol;
     </script>
 
 </body>
