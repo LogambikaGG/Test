@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Parsing a JSON Array.</h2>
+
+<p>Data written as an JSON array will be parsed into a JavaScript array.</p>
+<p id="demo"></p>
+<p id="demo-1"></p>
+
+<script>
+const text = '[ "Vijay", "Suriya", "JO", "Ajith" ]';
+const myArr = JSON.parse(text);                                  // json file is converted into an object
+document.getElementById("demo").innerHTML = myArr[0];
+
+const obj = {name: "Shalini", age: 25, city: "Chennai"};
+const myJSON = JSON.stringify(obj);                               // object is converted into json file
+document.getElementById("demo-1").innerHTML = myJSON;
+</script>
+
+</body>
+</html>
