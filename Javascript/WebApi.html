@@ -11,7 +11,7 @@
     <p id = "para1"></p>
     <p id = "para2"></p>
     <script>
-// Post Request using json placeholder api
+//Post Request using json placeholder api
           async function createNewUser(file){
               let createVariable = fetch(file, {
                   method : 'POST',
@@ -36,16 +36,17 @@
               },
           })
           .then((response) => response.text())
-        //   .then((user) => document.getElementById("para1").innerHTML = user)
-            .then((dataDisplay) => document.getElementById("para").innerHTML = dataDisplay)
+          //.then((user) => document.getElementById("para1").innerHTML = user)
+           .then((dataDisplay) => document.getElementById("para").innerHTML = dataDisplay)
       }
       createNewUser("https://jsonplaceholder.typicode.com/posts")
 //Get request to see the result of post
       async function getDetails(){
-          const request = await fetch("https: jsonplaceholder.typicode.com/users/1");
+          const request = await fetch("https://jsonplaceholder.typicode.com/users/1");
           const displayText = await request.text();
           document.getElementById("para2").innerHTML = displayText;
       }
+      getDetails();
 //Put request using json placeholder api
           async function updateUser(file){
               let createVariable = fetch(file, {
